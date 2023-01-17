@@ -77,8 +77,8 @@ sudo apt install vlc -y
 
 # install Zoom
 echo "- INSTALLING ZOOM -"
-firefox https://zoom.us/download?os=linux
 echo "!! Download the Zoom installer to Downloads, then press [ENTER] !!"
+firefox https://zoom.us/download?os=linux
 read
 sudo apt install ~/Downloads/zoom_amd64.deb -y
 

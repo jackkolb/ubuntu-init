@@ -11,6 +11,9 @@ sudo apt upgrade -y
 # add packages to apt
 sudo apt install software-properties-common apt-transport-https wget -y
 
+# install git
+sudo apt install git -y
+
 # generate SSH keys
 echo "- GENERATING SSH KEYS -"
 ssh-keygen -t ed25519 -C "jack@jackkolb.com"

@@ -64,33 +64,33 @@ code --install-extension golang.go
 
 # install MS Teams
 echo "- INSTALLING MS TEAMS -"
-wget –O teams.deb https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.3.00.5153_amd64.deb
-sudo apt install ./teams.deb
+wget –O ~/Downloads/teams.deb https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.3.00.5153_amd64.deb
+sudo apt install ~/Downloads/teams.deb -y
 
 # install Slack
 echo "- INSTALLING SLACK -"
-sudo apt install slack
+sudo apt install slack -y
 
 # install VLC
 echo "- INSTALLING VLC -"
-sudo apt install vlc
+sudo apt install vlc -y
 
 # install Zoom
 echo "- INSTALLING ZOOM -"
 firefox https://zoom.us/download?os=linux
 echo "!! Download the Zoom installer to Downloads, then press [ENTER] !!"
 read
-sudo apt install ~/Downloads/zoom_amd64.deb
+sudo apt install ~/Downloads/zoom_amd64.deb -y
 
 # install ROS
 echo "- INSTALLING ROS NOETIC -"
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
-sudo apt install curl # if you haven't already installed curl
+sudo apt install curl -y # if you haven't already installed curl
 curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
-sudo apt install ros-noetic-desktop
+sudo apt install ros-noetic-desktop -y
 echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
-sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
+sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential -y
 sudo rosdep init
 rosdep update
 

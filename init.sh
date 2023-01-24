@@ -15,7 +15,10 @@ sudo apt install software-properties-common apt-transport-https wget -y
 sudo apt install git -y
 
 # install pip
-sudo apt install python3-pip
+sudo apt install python3-pip -y
+
+# install aptitude
+sudo apt install aptitude -y
 
 # generate SSH keys
 echo "- GENERATING SSH KEYS -"

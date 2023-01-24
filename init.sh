@@ -14,6 +14,9 @@ sudo apt install software-properties-common apt-transport-https wget -y
 # install git
 sudo apt install git -y
 
+# install pip
+sudo apt install python3-pip
+
 # generate SSH keys
 echo "- GENERATING SSH KEYS -"
 ssh-keygen -t ed25519 -C "jack@jackkolb.com"

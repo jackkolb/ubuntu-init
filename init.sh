@@ -17,6 +17,12 @@ sudo apt install git -y
 # install pip
 sudo apt install python3-pip -y
 
+# install audio packages
+sudo apt install portaudio19-dev alsa-utils
+
+# install useful python packages
+sudo pip3 install matplotlib numpy scipy pyaudio
+
 # install aptitude
 sudo apt install aptitude -y
 

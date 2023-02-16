@@ -21,7 +21,7 @@ sudo apt install python3-pip -y
 sudo apt install portaudio19-dev alsa-utils -y
 
 # install useful python packages
-sudo pip3 install matplotlib numpy scipy pyaudio
+sudo pip3 install matplotlib numpy scipy pyaudio flask
 
 # install aptitude
 sudo apt install aptitude -y

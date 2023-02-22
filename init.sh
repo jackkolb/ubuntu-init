@@ -87,6 +87,10 @@ sudo apt install slack -y
 echo "- INSTALLING VLC -"
 sudo apt install vlc -y
 
+# install kolourpaint
+echo "- INSTALLING KOLOURPAINT -"
+sudo apt install kolourpaint -y
+
 # install Zoom
 echo "- INSTALLING ZOOM -"
 echo "!! Download the Zoom installer to Downloads, then press [ENTER] !!"
